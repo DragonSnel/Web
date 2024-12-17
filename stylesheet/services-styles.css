@@ -1,0 +1,115 @@
+/* Styles for services page */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, #f0f8ff, #e6effc);
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #001f3f;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Hero Section */
+.hero-services {
+    padding: 4rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffd700, #e3e4e8);
+    color: #001f3f;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Service Cards */
+.service-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.cursor-trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(0,128,128,0.8), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
