@@ -1,0 +1,1 @@
+This is simple website created in different styles 
